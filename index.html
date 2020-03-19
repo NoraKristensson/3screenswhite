@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 screens</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7c34d2d1b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="screen">
+    <main class="main">
+      <div class="parent-content">
+        <div class="navigation">
+          <nav class="navlink">
+            <ul class="topnav" id="myTopnav">
+              <li>
+                <a href="#works">Works</a>
+              </li>
+              <li>
+                <a href="#Services">Services</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                  ><i class="fa fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="content">
+          <h1 class="title">
+            Patagonia
+          </h1>
+          <p class="text">
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+            viverra eleifend lacus, vitae ullamcor.
+          </p>
+          <picture>
+            <source media="(max-width: 450px)" srcset="img/horses-iphone.png" />
+            <source media="(max-width: 800px)" srcset="img/horses-ipad.png" />
+            <source media="(max-width: 1400px)" srcset="img/horses.png" />
+
+            <img
+              src="img/horses.png"
+              alt="Chris standing up holding his daughter Elva"
+            />
+          </picture>
+          <!-- <div class="img-container">
+            <img src="img/horses.png" alt="horses in the wild" />
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
